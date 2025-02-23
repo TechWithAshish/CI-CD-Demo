@@ -23,4 +23,9 @@ public class CiCdController {
 
         return new ResponseEntity<>(str, HttpStatus.OK);
     }
+
+    @GetMapping("/info")
+    public ResponseEntity<String> getInfo(){
+        return new ResponseEntity<>("We are generating random number from 1000 to 100000", HttpStatus.OK);
+    }
 }
